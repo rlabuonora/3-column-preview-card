@@ -1,8 +1,10 @@
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
+
+/* Global Styles */
 
 *,
 *::after,
@@ -18,17 +20,9 @@ body {
 main {
   width: 350px;
   margin: 2em auto;
-  border-radius: 50%;
 }
 
-section {
-  padding: 50px;
-}
-
-
-  
 @media (min-width: 700px) {
-  
   main {
     width: auto;
     max-width: 920px;
@@ -38,6 +32,11 @@ section {
     flex: 1;
   }
 }
+
+section {
+  padding: 50px;
+}
+
 
 h1 {
   font-family: 'Big Shoulders Display', cursive;
@@ -55,19 +54,15 @@ section.first {
 }
 
 @media (min-width: 700px) {
-  
   section.first {
     border-radius: 6px 0 0 6px;
   }
-
 }
 
 section.second {
   background-image: url("images/icon-suvs.svg");
   background-repeat: no-repeat;
   background-position: 50px 50px;
-
-
 }
 
 section.third {
@@ -78,11 +73,9 @@ section.third {
 }
 
 @media (min-width: 700px) {
-  
   section.third {
     border-radius: 0 6px 6px 0;
   }
-
 }
 
 section.first {
@@ -102,14 +95,13 @@ section p, section h1 {
 }
 
 section p {
-  opacity: 0.65;
-}
-
-section p {
+  
   font-size: 15px;
   font-weight: 400;
-  margin-bottom: 0;
+  opacity: 0.65;
   line-height: 1.6;
+  
+  margin-bottom: 0;
   padding-right: 14px;
 }
 
@@ -122,15 +114,16 @@ section p {
 }
 
 section button {
-  border: none;
-  background-color: hsl(0, 0%, 95%);
-  color: hsla(0, 0%, 100%, 0.65);
-  padding: 15px 44px;
-  display: block;
-  margin: 30px 0 26px 0;
-  border-radius: 50px;
+  
   font-family: 'Lexend Deca', sans-serif;
   font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+  color: hsla(0, 0%, 100%, 0.65);
+  border: none;
+  
+  padding: 15px 44px;
+  margin: 30px 0 26px 0;
+  border-radius: 50px;
 }
 
 section.first button {
@@ -147,11 +140,9 @@ section.third button {
 
 
 @media (min-width: 700px) {
-  
   section button {
     margin-top: 80px;
   }
-
 }
 
 
