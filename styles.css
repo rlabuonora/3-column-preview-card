@@ -16,18 +16,34 @@ body {
 }
 
 main {
-  width: 920px;
-  margin: 0 auto;
+  width: 350px;
+  margin: 2em auto;
+  border-radius: 50%;
 }
 
 section {
   padding: 50px;
 }
 
+
+  
+@media (min-width: 700px) {
+  
+  main {
+    width: auto;
+    max-width: 920px;
+    display: flex;
+  }
+  section {
+    flex: 1;
+  }
+}
+
 h1 {
   font-family: 'Big Shoulders Display', cursive;
-  margin-top: 82px;
-  font-size: 42px;
+  margin-top: 70px;
+  margin-bottom: 28px;
+  font-size: 38px;
   text-transform: uppercase;
 }
 
@@ -35,6 +51,15 @@ section.first {
   background-image: url("images/icon-sedans.svg");
   background-repeat: no-repeat;
   background-position: 50px 50px;
+  border-radius: 6px 6px 0 0;
+}
+
+@media (min-width: 700px) {
+  
+  section.first {
+    border-radius: 6px 0 0 6px;
+  }
+
 }
 
 section.second {
@@ -49,27 +74,86 @@ section.third {
   background-image: url("images/icon-luxury.svg");
   background-repeat: no-repeat;
   background-position: 50px 50px;
+  border-radius: 0  0 6px 6px;
 }
 
-section.first, section.first button {
+@media (min-width: 700px) {
+  
+  section.third {
+    border-radius: 0 6px 6px 0;
+  }
+
+}
+
+section.first {
   background-color: hsl(31, 77%, 52%);
 }
 
-section.second, section.second button {
+section.second {
   background-color: hsl(184, 100%, 22%);
 }
 
-section.third, section.third button {
+section.third {
   background-color: hsl(179, 100%, 13%);
 }
 
 section p, section h1 {
-  color: hsla(0, 0%, 100%, 0.75);
+  color: hsl(0, 0%, 100%);
+}
+
+section p {
+  opacity: 0.65;
+}
+
+section p {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0;
+  line-height: 1.6;
+  padding-right: 14px;
+}
+
+@media (min-width: 700px) {
+  
+  section p {
+    padding-right: 0;
+  }
+
 }
 
 section button {
-  border: 1px solid hsl(0, 0%, 95%);
-  color: hsl(0, 0%, 95%);
-  height: 50px;
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+  color: hsla(0, 0%, 100%, 0.65);
+  padding: 15px 44px;
+  display: block;
+  margin: 30px 0 26px 0;
+  border-radius: 50px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
 }
+
+section.first button {
+  color: hsl(31, 77%, 52%);
+}
+
+section.second button {
+  color: hsl(184, 100%, 22%);
+}
+
+section.third button {
+  color: hsl(179, 100%, 13%);
+}
+
+
+@media (min-width: 700px) {
+  
+  section button {
+    margin-top: 80px;
+  }
+
+}
+
+
+
 
