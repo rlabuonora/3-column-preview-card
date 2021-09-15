@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: hsl(0, 0%, 95%);
+}
+
+main {
+  width: 920px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 50px;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  margin-top: 82px;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+
+section.first {
+  background-image: url("images/icon-sedans.svg");
+  background-repeat: no-repeat;
+  background-position: 50px 50px;
+}
+
+section.second {
+  background-image: url("images/icon-suvs.svg");
+  background-repeat: no-repeat;
+  background-position: 50px 50px;
+
+
+}
+
+section.third {
+  background-image: url("images/icon-luxury.svg");
+  background-repeat: no-repeat;
+  background-position: 50px 50px;
+}
+
+section.first, section.first button {
+  background-color: hsl(31, 77%, 52%);
+}
+
+section.second, section.second button {
+  background-color: hsl(184, 100%, 22%);
+}
+
+section.third, section.third button {
+  background-color: hsl(179, 100%, 13%);
+}
+
+section p, section h1 {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+section button {
+  border: 1px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  height: 50px;
+}
+
